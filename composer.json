@@ -2,18 +2,25 @@
   "name": "biggersam/article_auto_generate",
   "type": "library",
   "description": "Automatic generation of articles",
-  "keywords": ["article","auto","generation"],
+  "keywords": [
+    "article",
+    "auto",
+    "generation"
+  ],
   "homepage": "",
   "license": "MIT",
   "authors": [
     {
       "name": "biggersam",
-      "email": "1127580238@qq.com",
-      "role": "Developer"
+      "email": "1127580238@qq.com"
     }
   ],
   "require": {
-    "php": ">=5.5.*",
     "ext-mbstring": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "articleAutoGenerate\\": "src/"
+    }
   }
 }
